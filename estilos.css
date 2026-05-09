@@ -197,18 +197,33 @@ hr{
 
 @media (max-width: 768px){
     .agenteImagen{
-        margin-left: 20px;
-        gap: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorImagen{
+        align-items: center;
+    }
+
+    .hrImagen{
+        width: 200px;
+    }
+
+    .agenteImagen img{
+        width: 180px;
     }
 
     .contenido{
         min-width: 0;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 }
-
-
-
-
 
 .propiedadesTitulo{
     background-color: #0f0f0f;
@@ -306,12 +321,6 @@ hr{
     flex-wrap: wrap;
 }
 
-
-
-
-
-
-
 .contactosFondo{
     background-color: #000;
     text-align: center;
@@ -382,50 +391,131 @@ hr{
     color: #D4AF34;
 }
 
-@media (max-width: 768px){
+/* ===== RESPONSIVE MÓVIL ===== */
 
-    .agenteImagen{
+@media (max-width: 600px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    .menuInicio {
+        font-size: 1.1rem;
+    }
+
+    .tarjetaPresentacion {
+        padding: 10px 15px;
+    }
+
+    .ubi {
+        margin: 30px 0;
+        font-size: 0.75rem;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .letraPeque {
+        font-size: 0.9rem;
+        margin: 20px 10px 25px 10px;
+    }
+
+    .botonesInicio {
         flex-direction: column;
         align-items: center;
-        margin-left: 20px;
-        margin-right: 20px;
-        gap: 20px;
+        gap: 12px;
+        margin-bottom: 30px;
     }
 
-    .contenido{
-        min-width: 0;
-        max-width: 100%;
+    .boton {
+        width: 80%;
         text-align: center;
+        padding: 10px;
     }
 
-    .propiedad{
+    .infoNumeros {
+        font-size: 1.2rem;
+    }
+
+    .infoTexto {
+        font-size: 0.65rem;
+    }
+
+    .saludo {
+        font-size: 1.8rem;
+    }
+
+    .propiedadesTitulo {
+        padding: 25px 15px 0 15px;
+    }
+
+    .propiedades {
+        padding: 10px 15px;
+        gap: 0;
+    }
+
+    .propiedad {
         width: 100%;
-        max-width: 350px;
+        max-width: 100%;
+        min-width: 0;
+        margin: 15px 0;
     }
 
-    .etiquetas{
-        top: 10px;
-        left: 10px;
+    .propiedad-imagen {
+        position: relative;
+    }
+
+    .etiquetas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 5px;
+        left: 5px;
+        right: 5px;
         gap: 4px;
     }
 
     .detallesComercio,
     .detallesPropiedad,
-    .detallesZona{
+    .detallesZona {
         font-size: 10px;
-        padding: 3px 6px;
+        padding: 3px 5px;
     }
 
-    .propiedad-informacion{
-        padding: 1px 15px 20px 15px;
+    .propiedad-informacion {
+        padding: 1px 0 15px 15px;
     }
 
-    .propiedad-informacion hr{
-        width: 100%;
+    .propiedad-informacion hr {
+        width: 90%;
     }
 
-    .infoExtra{
-        flex-wrap: wrap;
+    .infoExtra {
         gap: 10px;
+        font-size: 0.85rem;
+        padding-right: 15px;
+    }
+
+    .contactosTitulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .contactos {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .btn-red {
+        width: 75%;
+        margin: 10px 0;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+
+    .piePagina {
+        font-size: 1rem;
+        padding: 12px;
     }
 }
