@@ -120,7 +120,7 @@ h1{
 }
 
 hr{
-    width: 500px;
+    width: min(500px, 90%);
     margin-top: 0;
     margin-bottom: 0;
     border-color: #000a;
